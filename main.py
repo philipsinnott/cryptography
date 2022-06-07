@@ -3,6 +3,7 @@ def main():
     SHIFT = ShiftCipher()
     # print(SHIFT.alphabet_pos("khan"))
     print(SHIFT.encrypt("khan"))
+    print(SHIFT.decrypt("datg"))
 
     # print(SHIFT.alphabet_to_numerical("khan"))
     # SHIFT.numerical_to_alphabet([10, 7, 0, 13])

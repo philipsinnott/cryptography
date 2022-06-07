@@ -26,5 +26,13 @@ class ShiftCipher:
         reverse = self.numerical_to_alphabet(reverse)
         return str_result.join(reverse)
 
-    def decrypt(self, message):
-        pass
+    def decrypt(self, cipher_text):
+        cipher_text = self.alphabet_to_numerical(cipher_text)
+        reverse = []
+        for letter in cipher_text:
+            x = (letter - KEY) % 26
+            reverse.append(x)
+
+        str_result = ""
+        reverse = self.numerical_to_alphabet(reverse)
+        return str_result.join(reverse)
